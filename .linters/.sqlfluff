@@ -1,0 +1,49 @@
+[sqlfluff]
+dialect = postgres
+  # Keywords should not be used as identifiers (is it valid)
+exclude_rules = RF04
+max_line_length = 120
+
+[sqlfluff:indentation]
+tab_space_size = 4
+indent_unit = space
+indented_joins = false
+indented_using_on = false
+allow_implicit_indents = True
+
+[sqlfluff:rules:aliasing.table]
+aliasing.table = explicit
+
+[sqlfluff:rules:aliasing.column]
+aliasing.column = explicit
+
+[sqlfluff:rules:aliasing.expression]
+allow_scalar = True
+
+[sqlfluff:rules:ambiguous.column_references]
+group_by_and_order_by_style = explicit
+
+[sqlfluff:rules:capitalisation.keywords]
+capitalisation_policy = lower
+
+[sqlfluff:rules:capitalisation.identifiers]  # Tables, columns, views
+extended_capitalisation_policy = lower
+
+[sqlfluff:rules:capitalisation.functions]  # Function names
+capitalisation_policy = lower
+
+[sqlfluff:rules:capitalisation.literals]  # Null & Boolean Literals
+capitalisation_policy = lower
+
+[sqlfluff:rules:capitalisation.types]  # datatypes
+extended_capitalisation_policy = lower
+
+[sqlfluff:rules:layout.spacing]  # removal of trailing whitespace
+no_trailing_whitespace = true
+extra_whitespace = true
+
+[sqlfluff:rules:layout.commas]  # Leading comma enforcement
+line_position = leading
+
+[sqlfluff:layout:type:comma]  # Added with conjunction with leading commas
+line_position = leading
