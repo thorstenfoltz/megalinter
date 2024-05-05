@@ -11,7 +11,7 @@ all:
 	# just a dummy
 
 megalinter_install:
-	npm install mega-linter-runner --save-dev
+	npm install mega-linter-runner -g
 
 test:
 	mega-linter-runner -r v7 --flavor python
