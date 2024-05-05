@@ -1,0 +1,11 @@
+version: 1.0.0
+settings:
+debug: false
+production: true
+database:
+host: localhost
+port: 5432
+username: user
+password: password
+
+
