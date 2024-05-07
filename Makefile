@@ -1,5 +1,5 @@
 # Makefile
-.PHONY: venv all clean test fix
+.PHONY: venv all test fix
 .DEFAULT_GOAL := default
 
 default:
@@ -10,11 +10,11 @@ default:
 all:
 	# just a dummy
 
-megalinter_install:
-	npm install mega-linter-runner -g
+install:
+	npm install mega-linter-runner -g || sudo npm install mega-linter-runner
 
 test:
-	mega-linter-runner -r v7 --flavor python
+	mega-linter-runner -r v7 --flavor python || sudo mega-linter-runner -r v7 --flavor python
 
 fix:
-	mega-linter-runner -r v7 --flavor python --fix
+	mega-linter-runner -r v7 --flavor python --fix || sudo mega-linter-runner -r v7 --flavor python
