@@ -16,3 +16,4 @@ Adjust this file for your needs as explained in the [documentation](https://mega
 
 Many issues of the specific linter can be solved automatically by executing `make fix`.
 
+I wrote a more detailed desciprtion [here](https://medium.com/@thorsten.foltz/megalinter-streamline-your-development-with-all-in-one-linting-54aa2e52da82)
