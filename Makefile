@@ -14,7 +14,7 @@ install:
 	npm install mega-linter-runner -g || sudo npm install mega-linter-runner
 
 test:
-	mega-linter-runner -r v7 --flavor python || sudo mega-linter-runner -r v7 --flavor python
+	mega-linter-runner -r v7 --flavor python
 
 fix:
-	mega-linter-runner -r v7 --flavor python --fix || sudo mega-linter-runner -r v7 --flavor python
+	mega-linter-runner -r v7 --flavor python --fix
