@@ -1,11 +1,14 @@
 # Makefile
-.PHONY: venv all test fix
+.PHONY: venv all clean test fix
 .DEFAULT_GOAL := default
 
 default:
 	# Use make with one of the following options
 	# install -->
 	# test --> several tests and linters are used
+
+clean:
+	# dummy
 
 all:
 	# just a dummy
